@@ -61,13 +61,13 @@ cd used-cars-eda
 
 # Launch Jupyter Notebook
 jupyter notebook
-```
+
 📌 Folder Structure
 used-cars-eda/
 ├── EDA_Cars_Project_Jasmeet.ipynb
 ├── cars.csv
 └── README.md
-
+```
 📬 Contact
 Feel free to connect or reach out for feedback, questions, or collaboration!
 
