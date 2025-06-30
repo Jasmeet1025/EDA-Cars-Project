@@ -1,84 +1,76 @@
-📊 Used Cars EDA Project
-This project is an Exploratory Data Analysis (EDA) on a dataset of used cars sold across India. The aim is to understand key factors affecting car prices and explore patterns based on location, fuel type, ownership, and more.
-The entire analysis was done using Python in Jupyter Notebook, utilizing popular data wrangling libraries.
+# 📊 Used Cars EDA Project
 
-📁 Dataset Description
-Dataset Name: Used Cars (India)
+This project is an Exploratory Data Analysis (EDA) on a dataset of used cars sold across India. The goal is to uncover key factors that influence car prices and explore patterns based on location, fuel type, ownership, and more. The entire analysis is performed using Python in Jupyter Notebook, leveraging popular data wrangling and visualization libraries.
 
-Source: Local file (cars.csv)
+---
 
-Size: Contains thousands of records of car listings
+## 📁 Dataset Description
 
-Features:
+- **Dataset Name:** Used Cars (India)  
+- **Source:** Local file (`cars.csv`)  
+- **Size:** Contains thousands of records of car listings  
 
-Name, Location, Year, Fuel_Type, Transmission, Owner_Type
+### Features include:
 
-Numeric columns like Mileage, Power, Kilometers_Driven, Price, etc.
+- **Categorical:** Name, Location, Year, Fuel_Type, Transmission, Owner_Type  
+- **Numerical:** Mileage, Power, Kilometers_Driven, Price, New_Price (and others)  
 
-Mix of categorical and numerical features
+---
 
-🛠️ Tools and Libraries Used
-Pandas – for data manipulation and analysis
+## 🛠️ Tools and Libraries Used
 
-NumPy – for numerical operations
+- **Pandas:** Data manipulation and analysis  
+- **NumPy:** Numerical operations  
+- **Matplotlib.pyplot:** Visualization (can be expanded with seaborn or others)  
 
-Matplotlib.pyplot
-(Visualization libraries can be added here if used later)
+---
 
-🔍 EDA Process Overview
-Data Loading
+## 🔍 EDA Process Overview
 
-Initial Inspection
+1. **Data Loading:** Loaded the dataset into a DataFrame.  
+2. **Initial Inspection:** Checked shape, data types, missing values, and unique counts.  
+3. **Data Cleaning:**  
+   - Handled missing values in Mileage, Power, Price, and New_Price.  
+   - Converted relevant columns to appropriate numeric types after cleaning string formats.  
+4. **Exploratory Questions:**  
+   - Identified most common car brands and top locations.  
+   - Calculated average prices by fuel type, transmission, and year.  
+5. **Aggregation & Grouping:**  
+   - Grouped data by fuel type, location, owner type, etc.  
+   - Computed descriptive statistics such as mean and count.  
 
-Viewed shape, datatypes, null counts, unique values
+---
 
-Data Cleaning
+## 📈 Key Insights
 
-Handled missing values in Mileage, Power, Price, and New_Price
+- Diesel cars tend to have higher average power compared to petrol cars.  
+- Manual transmission is more common, but automatic cars generally have higher resale prices.  
+- Fuel type, manufacturing year, and location significantly influence car prices.  
+- Important information was hidden within string-formatted numeric fields like Mileage and Power, requiring data cleaning for proper analysis.  
 
-Converted columns to appropriate numeric formats
+---
 
-Exploratory Questions
+## ▶️ How to Run
 
-Identified most common car brands, top locations
-
-Found average prices by fuel type, transmission, and year
-
-Aggregation & Grouping
-
-Grouped data by fuel type, location, owner type, etc.
-
-Calculated mean, count, and other descriptive stats
-
-📈 Key Insights
-Diesel cars had higher average power compared to petrol.
-
-Manual transmission was more common, but automatic cars were more expensive.
-
-Fuel type, year, and location significantly influence the resale price.
-
-A lot of useful information was hidden in string-formatted numeric fields like Mileage and Power.
-
-▶️ How to Run
-
-Clone the repository:
+```bash
+# Clone the repository
 git clone https://github.com/Jasmeet1025/used-cars-eda.git
 
-Navigate into the project folder and run the notebook:
+# Navigate to the project directory
 cd used-cars-eda
+
+# Launch Jupyter Notebook
 jupyter notebook
-
-Make sure cars.csv is in the same directory as the notebook. If it's not, adjust the file path inside the notebook.
-
+```
 📌 Folder Structure
 used-cars-eda/
 ├── EDA_Cars_Project_Jasmeet.ipynb
 ├── cars.csv
 └── README.md
+
 📬 Contact
-Feel free to connect or reach out for feedback or collaboration!
+Feel free to connect or reach out for feedback, questions, or collaboration!
 
 Jasmeet Singh
 📧 sjasmeet7499@gmail.com
-🔗 LinkedIn Profile
-www.linkedin.com/in/jasmeet-singh-kachle-751534289
+🔗 www.linkedin.com/in/jasmeet-singh-kachle-751534289
