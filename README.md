@@ -1,95 +1,84 @@
-# 🚗 Used Cars Price EDA Project
+📊 Used Cars EDA Project
+This project is an Exploratory Data Analysis (EDA) on a dataset of used cars sold across India. The aim is to understand key factors affecting car prices and explore patterns based on location, fuel type, ownership, and more.
+The entire analysis was done using Python in Jupyter Notebook, utilizing popular data wrangling libraries.
 
-## 📌 Project Overview
+📁 Dataset Description
+Dataset Name: Used Cars (India)
 
-This project performs an Exploratory Data Analysis (EDA) on a dataset containing information about used cars sold across various Indian cities. The goal is to uncover patterns in pricing, understand feature distributions, and explore correlations between variables like fuel type, transmission, owner type, etc.
+Source: Local file (cars.csv)
 
----
+Size: Contains thousands of records of car listings
 
-## 📁 Dataset Description
+Features:
 
-- **File**: `cars.csv`
-- **Features** include:
-  - **Name** (Car brand and model)
-  - **Location** (City of sale)
-  - **Year** (Manufacturing year)
-  - **Kilometers_Driven**
-  - **Fuel_Type**
-  - **Transmission**
-  - **Owner_Type**
-  - **Mileage**
-  - **Engine**
-  - **Power**
-  - **Seats**
-  - **New_Price**
-  - **Price** (Selling price)
+Name, Location, Year, Fuel_Type, Transmission, Owner_Type
 
----
+Numeric columns like Mileage, Power, Kilometers_Driven, Price, etc.
 
-## 🎯 Project Goals
+Mix of categorical and numerical features
 
-- Analyze missing data and handle it appropriately.
-- Understand the distribution of key features like price, mileage, power, etc.
-- Perform grouping and aggregation for:
-  - Fuel type vs average price
-  - Location-wise car counts
-  - Owner types vs resale value
-  - Transmission types vs mileage
-- Convert string-based numeric features into actual numeric format.
-- Derive insights using `groupby()`, `value_counts()`, and basic visualizations (if applicable).
+🛠️ Tools and Libraries Used
+Pandas – for data manipulation and analysis
 
----
+NumPy – for numerical operations
 
-## 🔍 Key Questions Explored
+Matplotlib.pyplot
+(Visualization libraries can be added here if used later)
 
-1. What are the most common car models and locations?
-2. How are car prices distributed?
-3. What’s the average mileage for each transmission type?
-4. Which fuel types dominate the market?
-5. Which year had the highest number of cars listed?
-6. What is the resale value difference by owner type?
-7. What is the average power of diesel vs petrol cars?
+🔍 EDA Process Overview
+Data Loading
 
----
+Initial Inspection
 
-## 🛠️ Libraries Used
+Viewed shape, datatypes, null counts, unique values
 
-- `pandas`
-- `numpy`
-- `matplotlib`
----
+Data Cleaning
 
-## 📊 Sample Code Tasks
+Handled missing values in Mileage, Power, Price, and New_Price
 
-- Handling missing values with `.fillna()`, `.dropna()`
-- String cleanup using `.str.replace()` and regex
-- Type conversion using `astype()`
-- Grouping using `df.groupby()`
-- Finding unique counts using `.nunique()` and `.value_counts()`
+Converted columns to appropriate numeric formats
 
----
+Exploratory Questions
 
-## 🧠 Insights (Optional Summary)
+Identified most common car brands, top locations
 
-*You may want to fill this based on the final analysis/results in your notebook, e.g.:*
+Found average prices by fuel type, transmission, and year
 
-- Diesel cars had higher average power compared to petrol.
-- Manual transmission cars were more common, but automatic ones had higher average prices.
-- Owner type significantly affects resale price.
+Aggregation & Grouping
 
----
+Grouped data by fuel type, location, owner type, etc.
 
-## ▶️ How to Run
+Calculated mean, count, and other descriptive stats
 
-1. Clone or download the repository.
-2. Place `cars.csv` in the same folder as the notebook.
-3. Open `EDA_Cars_Project_Jasmeet.ipynb` using Jupyter Notebook or VS Code.
-4. Run all cells sequentially.
+📈 Key Insights
+Diesel cars had higher average power compared to petrol.
 
----
+Manual transmission was more common, but automatic cars were more expensive.
 
-## 👤 Author
+Fuel type, year, and location significantly influence the resale price.
 
-**Jasmeet Singh Kachle**  
-EDA Enthusiast | Python Learner
-Mail: sjasmeet7499@gmail.com
+A lot of useful information was hidden in string-formatted numeric fields like Mileage and Power.
+
+▶️ How to Run
+
+Clone the repository:
+git clone https://github.com/Jasmeet1025/used-cars-eda.git
+
+Navigate into the project folder and run the notebook:
+cd used-cars-eda
+jupyter notebook
+
+Make sure cars.csv is in the same directory as the notebook. If it's not, adjust the file path inside the notebook.
+
+📌 Folder Structure
+used-cars-eda/
+├── EDA_Cars_Project_Jasmeet.ipynb
+├── cars.csv
+└── README.md
+📬 Contact
+Feel free to connect or reach out for feedback or collaboration!
+
+Jasmeet Singh
+📧 sjasmeet7499@gmail.com
+🔗 LinkedIn Profile
+www.linkedin.com/in/jasmeet-singh-kachle-751534289
